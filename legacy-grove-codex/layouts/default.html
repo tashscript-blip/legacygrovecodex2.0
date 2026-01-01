@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
 
+    <!-- FONTS: Playfair Display (Serif) & Inter (Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- THE SKIN -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <!-- FAVICON (Placeholder) -->
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    {% for link in site.navigation %}
+                        <li><a href="{{ link.url }}" {% if page.url == link.url %}style="color: var(--gold-antique); border-bottom: 1px solid var(--gold-antique);"{% endif %}>{{ link.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- DYNAMIC CONTENT INJECTION -->
+    <main class="container">
+        {{ content }}
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Legacy Grove Codex LLC. New York State.</p>
+            <p>Antifragile Architecture. Sovereign Execution.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
