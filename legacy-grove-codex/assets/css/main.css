@@ -204,3 +204,55 @@ footer {
 @media (max-width: 768px) {
     .service-layout { grid-template-columns: 1fr; }
 }
+/* --- COMPONENT: THE FOUNDER (BIO) --- */
+.founder-section {
+    margin-top: 6rem;
+    padding-top: 4rem;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.founder-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr; /* Image takes 300px, Text takes rest */
+    gap: 4rem;
+    align-items: center;
+}
+
+.founder-image {
+    width: 100%;
+    height: 400px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--gold-antique);
+    /* In the future, put your real image here */
+    background-image: url('/assets/images/tash-profile.jpg'); 
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%) contrast(120%); /* The Noir Look */
+    transition: 0.5s;
+}
+
+.founder-image:hover {
+    filter: grayscale(0%) contrast(100%); /* Color returns on hover */
+}
+
+.founder-content h2 {
+    font-size: 2.5rem;
+    color: var(--text-ivory);
+    margin-bottom: 0.5rem;
+}
+
+.founder-role {
+    font-family: var(--font-heading);
+    color: var(--gold-antique);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+/* Mobile Adjustment */
+@media (max-width: 768px) {
+    .founder-grid { grid-template-columns: 1fr; text-align: center; }
+    .founder-image { height: 300px; margin-bottom: 2rem; }
+}
