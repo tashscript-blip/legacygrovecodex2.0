@@ -131,3 +131,76 @@ footer {
 </body>
 </html>
 }
+/* --- COMPONENT: THE CODEX (BLOG LIST) --- */
+.post-list {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.post-item {
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 2rem 0;
+    transition: 0.3s;
+}
+
+.post-item:hover {
+    border-color: var(--gold-antique);
+}
+
+.post-meta {
+    font-size: 0.85rem;
+    color: var(--teal-electric);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.post-title {
+    font-size: 1.8rem;
+    color: var(--text-ivory);
+    margin-bottom: 1rem;
+}
+
+.post-excerpt {
+    color: var(--text-muted);
+    font-size: 1rem;
+    max-width: 700px;
+}
+
+/* --- COMPONENT: INNER CIRCLE (SERVICES) --- */
+.service-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.service-content h2 {
+    font-size: 2.5rem;
+    color: var(--gold-antique);
+}
+
+.service-details ul {
+    list-style: none;
+    margin: 2rem 0;
+}
+
+.service-details li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-ivory);
+}
+
+.service-details li::before {
+    content: "◈"; /* The Diamond Glyph */
+    position: absolute;
+    left: 0;
+    color: var(--gold-antique);
+}
+
+/* Mobile Adjustment */
+@media (max-width: 768px) {
+    .service-layout { grid-template-columns: 1fr; }
+}
