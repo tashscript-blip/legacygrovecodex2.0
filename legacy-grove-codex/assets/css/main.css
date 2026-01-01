@@ -1,1 +1,83 @@
-the paint & logic
+/* --- THE DYNASTY PALETTE --- */
+:root {
+    /* Backgrounds */
+    --bg-obsidian: #0a0a0a;
+    --bg-charcoal: #121212;
+    --bg-card: #1a1a1a;
+    
+    /* Text & Accents */
+    --text-ivory: #e0e0e0;
+    --text-muted: #a0a0a0;
+    --gold-antique: #c5a059;
+    --gold-hover: #e5c07b;
+    --teal-electric: #2A9D8F; /* Subtle cyber glow */
+    --border-subtle: #333333;
+    
+    /* Typography */
+    --font-heading: 'Playfair Display', serif; /* Authority */
+    --font-body: 'Inter', sans-serif;         /* Clarity */
+    
+    /* Spacing */
+    --container-width: 900px;
+    --spacing-md: 2rem;
+}
+
+/* --- BASE RESET --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: var(--bg-obsidian);
+    color: var(--text-ivory);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- TYPOGRAPHY --- */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--gold-antique);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+a { color: var(--text-ivory); text-decoration: none; transition: 0.3s; }
+a:hover { color: var(--gold-antique); }
+
+/* --- LAYOUT UTILITIES --- */
+.container {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: var(--spacing-md) 0;
+}
+
+/* --- HEADER --- */
+header {
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 1.5rem 0;
+    background: var(--bg-charcoal);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+/* --- FOOTER --- */
+footer {
+    margin-top: auto;
+    border-top: 1px solid var(--border-subtle);
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
