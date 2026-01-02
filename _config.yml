@@ -1,13 +1,2 @@
-title: LEGACY GROVE CODEX
-email: contact@legacygrovecodex.com
-description: >- # This format handles long descriptions better
-  Sovereign Digital Artifacts & Generational Strategy.
-baseurl: "" # Keep empty for custom domain root
-url: "https://www.legacygrovecodex.com"
-twitter_username: tashscript_blip
-github_username: tashscript-blip
-
-# Build settings
+title: Legacy Grove Codex
 theme: minima
-plugins:
-  - jekyll-feed
