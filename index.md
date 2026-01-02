@@ -1,6 +1,5 @@
 ---
-layout: home
-title: Home
+layout: none
 ---
-
-# LGC 2.0 Online
+# LGC 2.0 PROTOCOL: ACTIVE
+The sovereign artifact is live.
