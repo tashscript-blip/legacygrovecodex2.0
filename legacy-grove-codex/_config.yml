@@ -4,7 +4,29 @@ url: "https://www.legacygrovecodex.com" # Update when live
 author: Tash-Raheem Joyner
 email: contact@legacygrovecodex.com
 
+# Build Settingstitle: LEGACY GROVE CODEX
+description: Sovereign Digital Artifacts & Generational Strategy.
+url: "https://www.legacygrovecodex.com" # The ultimate destination
+baseurl: "" # Keep this empty for custom domains
+
+author: Tash-Raheem Joyner
+email: contact@legacygrovecodex.com
+
 # Build Settings
+markdown: kramdown
+theme: null # We build our own throne.
+permalink: /:title/
+
+# Navigation Links (Global) - Used in your default.html header
+navigation:
+  - title: The Foyer
+    url: /
+  - title: The Codex
+    url: /codex/
+  - title: The Gateway
+    url: /gateway/
+  - title: Inner Circle
+    url: /inner-circle/
 markdown: kramdown
 theme: null # We build our own throne.
 permalink: /:title/
