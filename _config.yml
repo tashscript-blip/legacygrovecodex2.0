@@ -1,2 +1,4 @@
 title: Legacy Grove Codex
-theme: minima
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-remote-theme
